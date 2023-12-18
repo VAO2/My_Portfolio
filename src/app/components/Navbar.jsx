@@ -32,6 +32,7 @@ const Navbar = () => {
         >
          My Portfolio :-
         </Link>
+        
         <div className="mobile-menu block md:hidden">
           {!navbarOpen ? (
             <button

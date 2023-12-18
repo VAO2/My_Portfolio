@@ -12,14 +12,15 @@ export async function POST(req, res) {
   try {
     const data = await resend.emails.send({
       from: fromEmail,
-      to: ["mrnavneet16@gmail.com", email],
+      to: ["vedantag02@gmail.com"],
       subject: subject,
       react: (
         <>
           <h1>{subject}</h1>
+          <h2>{email}</h2>
           <p>Thank you for contacting us!</p>
-          <p>connect me on Discord :- mrnavi16#7016</p>
-          <a href="https://www.linkedin.com/in/mrnavneet/">Linkedin</a>
+          {/* <p>connect me on Discord :- mrnavi16#7016</p> */}
+          <a href="https://www.linkedin.com/in/vedantag/">Linkedin</a>
           <p>{message}</p> 
         </>
       ),

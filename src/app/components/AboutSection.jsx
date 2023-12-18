@@ -2,6 +2,7 @@
 import React, { useTransition, useState } from "react";
 import Image from "next/image";
 import TabButton from "./TabButton";
+import Link from "next/link";
 
 const TAB_DATA = [
   {
@@ -9,12 +10,17 @@ const TAB_DATA = [
     id: "skills",
     content: (
       <ul className="list-disc pl-2">
+        <li>C/C++</li>
+        <li>Tailwind CSS</li>
         <li>Node.js</li>
         <li>Express</li>
         {/* <li>PostgreSQL</li>
         <li>Sequelize</li> */}
         <li>JavaScript</li>
         <li>React</li>
+        <li>Redux</li>
+        <li>MongoDB.js</li>
+        <li>Express.js</li>
       </ul>
     ),
   },
@@ -23,9 +29,9 @@ const TAB_DATA = [
     id: "education",
     content: (
       <ul className="list-disc pl-2">
-        <li> <p>2020-2024</p>Pursuing Engineering From IIIT UNA HIMACHAL PRADESH</li>
-        <li> <p>2019</p>COMPLETED MY 10+2 FROM GOVT. SR. SEC. SCHOOL SRI KARANPUR (RBSC BOARD)</li>
-        <li> <p>2017</p>COMPLETED MY 10TH FROM TILAK PUBLIC SCHOOL SRIKARANPUR (RBSC BOARD)</li>
+        <li> <p>2021-2025</p>Pursuing B.Tech in Computer Science and Engineering from NIT Silchar</li>
+        <li> <p>2021</p>COMPLETED MY 10+2 FROM Hindustani Kendriya Vidyalaya, Guwahati (CBSE BOARD)</li>
+        <li> <p>2019</p>COMPLETED MY 10TH FROM Carmel High School, Jorhat (ICSE BOARD)</li>
       </ul>
     ),
   },
@@ -34,10 +40,21 @@ const TAB_DATA = [
     id: "certifications",
     content: (
       <ul className="list-disc pl-2">
-        <li>The Complete ReactJs Course - Basics to Advanced [2023]</li>
-        <li>Python And Flask Framework Complete Course</li>
-        <li>CSS crash Course For Beginners</li>
-        <li>Machine Learning Basics</li>
+        <li>MERN Stack Web Development Course (CodeHelp) [2023]</li>
+        <li> <Link href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/J.P.%20Morgan/R5iK7HMxJGBgaSbvk_J.P.%20Morgan_7WkTJqrC9ftAD78Dg_1688976318807_completion_certificate.pdf"> JP Morgan Chase & Co. Software Engineering Virtual Experience Program:  Forage</Link></li>
+        <li> <Link href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/Goldman%20Sachs/NPdeQ43o8P9HJmJzg_Goldman%20Sachs_7WkTJqrC9ftAD78Dg_1687254122060_completion_certificate.pdf"> Goldman Sachs Software Engineering Virtual Experience Program:  Forage</Link></li>
+      </ul>
+    ),
+  },
+  {
+    title: "Achievements",
+    id: "achievements",
+    content: (
+      <ul className="list-disc pl-2">
+        <li> AIR 812 in Codekaze 2023 conducted by Coding Ninjas</li>
+        <li> Under 150 rank in college in GFG</li>
+        <li> Solved 750+ Letcode DSA Problems</li>
+        <li> Runner Up at Soft CodeHack 1.0-May,2023</li>
       </ul>
     ),
   },
@@ -88,6 +105,13 @@ const AboutSection = () => {
             >
               {" "}
               Certifications{" "}
+            </TabButton>
+            <TabButton
+              selectTab={() => handleTabChange("achievements")}
+              active={tab === "achievements"}
+            >
+              {" "}
+              Achievements{" "}
             </TabButton>
           </div>
           <div className="mt-8">

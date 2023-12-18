@@ -10,54 +10,58 @@ const projectsData = [
     title: "Digi X EduHub Ecommerce Website using MERN Stack",
     description: "Some key features of this project are:- User can create account as STUDENT or INSTRUCTIOR, INSTRUCTOR can create courses and see his/her overall analytics., STUDENT Can buy courses, watch the content in them., STUDENT can review the courses., Payment integration is there through RAZORPAY.",
     image: "/images/projects/1.png",
-    tag: ["All", "Web"],
-    gitUrl: "https://github.com/mrnavi16",
-    previewUrl: "https://github.com/mrnavi16",
+    // tag: ["All","Web"],
+    tag: ["All"],
+    gitUrl: "https://github.com/VAO2",
+    previewUrl: "https://github.com/VAO2",
   },
   {
     id: 2,
-    title: "Obstacle Detecting and Avoding Car Project",
-    description: "I was also worked on obstacle detecing and Avoding car project in this project I was used ultrasonic sensor. The car automatic change our direction when some obstacle comming front of the car.",
-    image: "/images/projects/2.png",
+    title: "Contact Handler",
+    description: "This is a react based real time Contact handling site where one can save contacts edit and call saved contacts effortlessly in a few clicks. With real time search functionality and accuracy say bye to endless scrolling.",
+    image: "/images/projects/9.png",
     tag: ["All"],
-    gitUrl: "https://github.com/mrnavi16/obstacledetectingandavoidingcar",
-    previewUrl: "https://github.com/mrnavi16",
+    gitUrl: "https://github.com/VAO2/Contact-Handler",
+    previewUrl: "https://github.com/VAO2",
   },
   {
     id: 3,
-    title: "Virtual Painter using Machine Learning",
-    description: "In this project I was used python library like pandas, numpy, opencv. Its project fucntionality is its virtual draw on the screen not need any marker and any touchpad device by moving our finger front on the web cam its draw on the display screen.",
-    image: "/images/projects/3.png",
+    title: "E-Commerce Website",
+    description: "This is a react based one stop shopping website to select your favourite outfits, accessories and put them in your wishlist/cart just in few clicks.",
+    image: "/images/projects/8.png",
     tag: ["All"],
-    gitUrl: "https://github.com/mrnavi16/Computer-Vision-Virtual-Painter",
-    previewUrl: "https://github.com/mrnavi16/Computer-Vision-Virtual-Painter",
+    gitUrl: "https://github.com/VAO2/Shopping-Cart",
+    previewUrl: "https://jolly-khapse-6c878f.netlify.app/",
   },
   {
     id: 4,
     title: "React Portfolio Website",
     description: "This is my portfolio website by through this website you can connect with me and you also watch my Tech journey. In this project we are using HTML, CSS, JAVASCRIPT, REACT.JS, NODE.JS.",
-    image: "/images/projects/4.png",
-    tag: ["All", "Web"],
-    gitUrl: "https://github.com/mrnavi16",
-    previewUrl: "https://github.com/mrnavi16",
+    image: "/images/projects/7.png",
+    // tag: ["All", "Web"],
+    tag: ["All"],
+    gitUrl: "https://github.com/VAO2",
+    previewUrl: "https://github.com/VAO2",
   },
   {
     id: 5,
     title: "Razorpay Website Clone",
     description: "Secure Payment Processing, User-Friendly interface, Responsive Design, Seamless integration, Animations",
     image: "/images/projects/5.png",
-    tag: ["All", "Web"],
-    gitUrl: "https://github.com/mrnavi16",
-    previewUrl: "https://github.com/mrnavi16",
+    // tag: ["All","Web"],
+    tag: ["All"],
+    gitUrl: "https://github.com/VAO2",
+    previewUrl: "https://github.com/VAO2",
   },
   {
     id: 6,
     title: "Weather-App",
     description: "A Weather forcasting Website that takes Location from the users and tells the weather of that location. It is also able to find the weather forcast of any location thats given by the user",
     image: "/images/projects/6.png",
-    tag: ["All", "Web"],
-    gitUrl: "https://github.com/mrnavi16",
-    previewUrl: "https://github.com/mrnavi16",
+    // tag: ["All", "Web"],
+    tag: ["All"],
+    gitUrl: "https://github.com/VAO2/WeatherApp",
+    previewUrl: "https://github.com/VAO2/WeatherApp",
   },
 ];
 
@@ -90,11 +94,11 @@ const ProjectsSection = () => {
           name="All"
           isSelected={tag === "All"}
         />
-        <ProjectTag
+        {/* <ProjectTag
           onClick={handleTagChange}
           name="Web"
           isSelected={tag === "Web"}
-        />
+        /> */}
         {/* <ProjectTag
           onClick={handleTagChange}
           name="Mobile"
